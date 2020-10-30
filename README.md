@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> The main objective of this repo is to learn to use React and Redux to build a very simple application.<br />
 
-## Available Scripts
+Is a real-world project for a fictional company based in Germany.<br />
+The company is called Magic-books Inc. and requested to build the front-end of an application that will help them organize and manage their bookstore.<br />
 
-In the project directory, you can run:
+They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.<br /> 
 
-### `yarn start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :hammer:  Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- JavaScript,
+- NPM,
+- Nodejs
+- Yarn,
+- React,
+- Visual Studio Code
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :earth_americas: Live Demo
 
-### `yarn build`
+You can try it [here](https://rossielcs-bookstore.herokuapp.com/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :computer: Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `yarn eject`
+### Prerequisites
+Before you continue, be sure that you have installed:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- A Git GUI.
+- [NPM](https://www.npmjs.com/get-npm).
+- [Nodejs](https://nodejs.org/en/).
+- An Integrated Development Environment.
+- A web browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
+To run the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Clone the repository with Git.
+- Open it with your IDE.
+- Install the dependencies.<br /> 
+`npm install`
+- Run the app in development mode.<br />
+`npm run start`<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br />
+The page will reload if you make edits.
 
 ### Deployment
+Instructions from [Heroku Buildpack](https://github.com/mars/create-react-app-buildpack).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Generate a react app.<br />
+*replace $APP_NAME with the name for your unique app*.<br />
+`npx create-react-app@3.x $APP_NAME`
 
-### `yarn build` fails to minify
+- Create the heroku app.<br />
+*replace $APP_NAME with the name for your unique app*.<br />
+`heroku create $APP_NAME --buildpack mars/create-react-app`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Deploy.<br />
+`git push heroku master`
+
+- Visit the app's public URL in your browser.<br />
+`heroku open`
+
+## :gem:  Features
+1. The user can do the following mathematical operations:
+    - Addition.
+    - Subtraction.
+    - Multiplication.
+    - Division.
+    - Percentage.
+
+2. It has an "AC" button for all clear.
+
+## :woman:  Author
+
+**Rossiel Carranza**
+
+- Github: [@RossielCS](https://github.com/RossielCS)
+- LinkedIn: [Rossiel Carranza](https://www.linkedin.com/in/rossiel-carranza/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](issues/).
+
+1. Fork this repository.
+2. Create a branch: git checkout -b <branch_name>
+3. Make your changes and commit them: git commit -m '<commit_message>'
+4. Push to the original branch: git push origin <project_name>/<location>
+5. Create the pull request.
+
+## Show your support
+
+Give an ⭐️ if you like this project!
+
+## 📝  License
+
+This project is [MIT](lic.url) licensed.
