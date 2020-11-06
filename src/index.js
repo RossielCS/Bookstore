@@ -1,11 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/stylesheet/index.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import App from './components/App';
+import './assets/stylesheet/index.css';
+
+const idGenerator = () => Math.trunc(Math.random() * Math.floor(100));
+
+const initialState = {
+  books: [
+    { id: idGenerator(), title: 'Frankenstein', category: 'Horror' },
+    { id: idGenerator(), title: 'Dracula', category: 'Horror' },
+    { id: idGenerator(), title: 'Treasure Island', category: 'Action' },
+    { id: idGenerator(), title: 'Dune', category: 'Sci-Fi' },
+  ],
+};
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root'),
 );
