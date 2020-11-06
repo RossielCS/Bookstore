@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
-import rootReducer from './reducers';
+// import rootReducer from './reducers';
+import booksReducer from './reducers/books';
 import './assets/stylesheet/index.css';
 
-const idGenerator = () => Math.trunc(Math.random() * Math.floor(100));
+const idGenerator = () => Math.random() * Math.floor(10);
 
 const initialState = {
   books: [
@@ -17,7 +18,7 @@ const initialState = {
   ],
 };
 
-const store = createStore(rootReducer, initialState);
+const store = createStore(booksReducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>
