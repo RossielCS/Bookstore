@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
+import idGenerator from '../auxiliaries';
 
 const categories = [
   'Action', 'Biography', 'History',
@@ -27,10 +29,11 @@ class BooksForm extends React.Component {
   }
 
   handleSubmit(e) {
-    const { title } = this.state;
+    const { title, category } = this.state;
+    const { createBook } = this.props;
     e.preventDefault();
     if (title.length) {
-      createBook(this.state);
+      createBook({ id: idGenerator(), title, category });
       this.setState({ title: '', category: 'Action' });
     }
   }
@@ -57,10 +60,10 @@ class BooksForm extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  createBook(book) {
-    dispatch(createBook(book));
-  },
-});
+const mapDispatchToProps = dispatch => ({ createBook: book => dispatch(createBook(book)) });
+
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
 
 export default connect(null, mapDispatchToProps)(BooksForm);
