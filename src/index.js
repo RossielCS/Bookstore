@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
+import rootReducer from './reducers';
 import './assets/stylesheet/index.css';
 
 const idGenerator = () => Math.trunc(Math.random() * Math.floor(100));
@@ -16,7 +17,7 @@ const initialState = {
   ],
 };
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>

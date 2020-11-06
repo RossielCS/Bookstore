@@ -4,7 +4,7 @@ const categories = [
   'Action', 'Biography', 'History',
   'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-const BooksForm = () => {
+const BooksForm = () => (
   <form>
     <label htmlFor="title">
       Title
@@ -19,7 +19,7 @@ const BooksForm = () => {
       </select>
     </label>
     <input type="submit" value="Submit" />
-  </form>;
-};
+  </form>
+);
 
 export default BooksForm;
