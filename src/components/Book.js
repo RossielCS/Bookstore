@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ id, title, category }) => (
+const Book = ({
+  id, title, category, handleRemoveBook,
+}) => (
   <>
     <td>{id}</td>
     <td>{title}</td>
