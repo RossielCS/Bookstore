@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BooksList = ({ books }) => {
+const BooksList = ({ books, removeBook }) => {
   const handleRemoveBook = book => {
     removeBook(book);
   };
@@ -36,8 +36,11 @@ const BooksList = ({ books }) => {
 
 const mapStateToProps = state => ({ books: state.books });
 
+const mapDispatchToProps = dispatch => ({ removeBook: book => dispatch(removeBook(book)) });
+
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
