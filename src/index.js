@@ -14,6 +14,7 @@ const initialState = {
     { id: idGenerator(), title: 'Treasure Island', category: 'Action' },
     { id: idGenerator(), title: 'Dune', category: 'Sci-Fi' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, initialState);

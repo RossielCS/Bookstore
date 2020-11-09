@@ -8,8 +8,8 @@ const CategoryFilter = ({ handleFilterChange }) => {
   return (
     <label htmlFor="filter">
       Filter Categories
-      <select onChange={e => handleFilterChange(e)}>
-        <option key="All" value="All" selected>All</option>
+      <select onChange={e => handleFilterChange(e.target.value)}>
+        <option key="All" value="All" defaultValue>All</option>
         {filterCategories.map(
           category => (
             <option
