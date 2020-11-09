@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 import { removeBook, changeFilter } from '../actions';
@@ -14,6 +14,14 @@ const BooksList = ({ books, removeBook, changeFilter }) => {
     changeFilter(filter);
   };
 
+  const filterValue = useSelector(state => state.filter);
+  let filteredBooks;
+  if (filterValue === 'All') {
+    filteredBooks = books;
+  } else {
+    filteredBooks = books.filter(x => x.category === filterValue);
+  }
+
   return (
     <>
       <CategoryFilter handleFilterChange={handleChangeFilter} />
@@ -26,7 +34,7 @@ const BooksList = ({ books, removeBook, changeFilter }) => {
           </tr>
         </thead>
         <tbody>
-          { books.map(book => (
+          { filteredBooks.map(book => (
             <tr key={book.id}>
               <Book
                 id={book.id}
