@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from './Header';
 import BookForm from '../containers/BooksForm';
 import BookList from '../containers/BooksList';
-import '../assets/stylesheet/App.css';
 
 const App = () => (
   <div className="App">
+    <Header />
     <BookForm />
     <BookList />
   </div>
