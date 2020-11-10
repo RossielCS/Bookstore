@@ -23,7 +23,7 @@ const BooksList = ({ books, removeBook, changeFilter }) => {
   }
 
   return (
-    <>
+    <div className="Books-list">
       <CategoryFilter handleFilterChange={handleChangeFilter} />
       <table>
         <thead>
@@ -35,7 +35,7 @@ const BooksList = ({ books, removeBook, changeFilter }) => {
         </thead>
         <tbody>
           { filteredBooks.map(book => (
-            <tr key={book.id}>
+            <tr key={book.id} className="Book">
               <Book
                 id={book.id}
                 title={book.title}
@@ -46,7 +46,7 @@ const BooksList = ({ books, removeBook, changeFilter }) => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 
