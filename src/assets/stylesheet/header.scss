@@ -1,0 +1,47 @@
+@import 'variables';
+
+.Header {
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 100px 27px 100px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-mon;
+  background-color: $secondary-color;
+  border-bottom: 2px solid $senary-color;
+
+  h1 {
+    width: 240px;
+    height: 37px;
+    margin: 6px 47px 2px 0;
+    font-family: $font-mon;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: normal;
+    white-space: nowrap;
+    color: $primary-color;
+  }
+
+  ul {
+    flex-grow: 2;
+    display: flex;
+
+    li {
+      height: 16px;
+      margin: 18px 41px 11px 0;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 1.9px;
+      color: $tertiary-color;
+    }
+  }
+
+  div {
+    width: 45px;
+    height: 45px;
+    padding: 14px;
+    border: solid 1px $senary-color;
+    border-radius: 50%;
+  }
+}

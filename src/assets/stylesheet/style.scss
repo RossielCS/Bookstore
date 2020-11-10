@@ -1,41 +1,8 @@
 @import 'reset';
 @import 'variables';
+@import 'header';
 
 .App {
   min-height: 100vh;
   min-width: 100vw;
-}
-
-.Header {
-  height: 95px;
-  margin: 0 0 38px;
-  padding: 23px 99px 27px 100px;
-  display: flex;
-  font-family: $font-mon;
-  background-color: $secondary-color;
-
-  h1 {
-    width: 240px;
-    height: 37px;
-    margin: 6px 47px 2px 0;
-    font-family: $font-mon;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: normal;
-    color: $primary-color;
-  }
-
-  ul {
-    display: flex;
-
-    li {
-      height: 16px;
-      margin: 18px 41px 11px 0;
-      font-size: 13px;
-      font-weight: normal;
-      line-height: normal;
-      letter-spacing: 1.9px;
-      color: $tertiary-color;
-    }
-  }
 }
