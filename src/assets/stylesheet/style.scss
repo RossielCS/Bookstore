@@ -1,9 +1,22 @@
 @import 'reset';
-
-body {
-  background-color: aqua;
-}
+@import 'variables';
 
 .App {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Header {
+  height: 10vh;
+  display: flex;
   background-color: brown;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  ul {
+    display: flex;
+
+  }
 }
