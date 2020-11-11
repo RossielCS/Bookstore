@@ -45,7 +45,7 @@
       margin-top: 4px;
       font-family: $font-robslab;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 300;
       color: $quaternary-color;
     }
 
@@ -65,7 +65,7 @@
         font-family: $font-robslab;
         font-size: 14px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: 300;
         color: #4386bf;
       }
 
@@ -80,6 +80,39 @@
   .book-percentage {
     width: 25%;
     margin-right: 40px;
+    display: flex;
+    align-items: center;
+
+    .book-percentage-circle {
+      width: 68px;
+      height: 68px;
+      margin-right: 20px;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 50%;
+      border-top-color: $primary-color;
+      border-right-color: $primary-color;
+      border-bottom-color: $primary-color;
+      border-left-color: $senary-color;
+      transform: rotate(45deg);
+    }
+
+    .book-percentage-number {
+      font-family: $font-mon;
+
+      h3 {
+        width: 68px;
+        height: 39px;
+        font-size: 32px;
+        font-weight: normal;
+      }
+
+      p {
+        width: 80px;
+        opacity: 0.5;
+        font-size: 14px;
+      }
+    }
   }
 
   .book-progress {

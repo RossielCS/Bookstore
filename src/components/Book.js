@@ -22,9 +22,11 @@ const Book = ({
         </ul>
       </div>
       <div className="book-percentage">
-        <img src="" alt="percentage" />
-        <h3>2%</h3>
-        <p>Completed</p>
+        <div className="book-percentage-circle" />
+        <div className="book-percentage-number">
+          <h3>2%</h3>
+          <p>Completed</p>
+        </div>
       </div>
       <div className="book-progress">
         <p>CURRENT CHAPTER</p>
