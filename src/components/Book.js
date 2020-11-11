@@ -8,30 +8,30 @@ const Book = ({
   return (
     <>
       <div className="book-info">
-        <p className="book-category">{category}</p>
+        <p className="info-category">{category}</p>
         <h2>{title}</h2>
-        <p className="book-author">Author</p>
+        <p className="info-author">Author</p>
         <ul>
-          <li className="book-info-op book-border">Comments</li>
+          <li className="info-op book-border">Comments</li>
           <li className="book-border">
-            <button className="book-info-op" type="button" onClick={() => handleRemoveBook(book)}>
+            <button className="info-op" type="button" onClick={() => handleRemoveBook(book)}>
               Remove
             </button>
           </li>
-          <li className="book-info-op">Edit</li>
+          <li className="info-op">Edit</li>
         </ul>
       </div>
       <div className="book-percentage">
-        <div className="book-percentage-circle" />
-        <div className="book-percentage-number">
+        <div className="percentage-circle" />
+        <div className="percentage-number">
           <h3>2%</h3>
           <p>Completed</p>
         </div>
       </div>
       <div className="book-progress">
-        <p>CURRENT CHAPTER</p>
-        <p>Chapter 1</p>
-        <button type="button">
+        <p className="progress-chapter">CURRENT CHAPTER</p>
+        <p className="progress-number-chapter">Chapter 1</p>
+        <button type="button" className="progress-button">
           UPDATE PROGRESS
         </button>
       </div>

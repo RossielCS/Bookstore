@@ -4,24 +4,26 @@
   table {
     width: 100%;
     margin: auto;
-    background-color: brown;
+    background-color: $quinary-color;
   }
 }
 
 .Book {
+  width: 1200px;
+  height: 170px;
   margin: 14px 100px;
   padding: 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 4px;
   border: solid 1px $senary-color;
   background-color: $secondary-color;
 
   .book-info {
-    width: 50%;
-    margin-right: 40px;
+    width: 40%;
 
-    .book-category {
+    .info-category {
       opacity: 0.5;
       font-family: $font-mon;
       font-size: 14px;
@@ -39,9 +41,7 @@
       color: $tertiary-color;
     }
 
-    .book-author {
-      width: 107px;
-      height: 19px;
+    .info-author {
       margin-top: 4px;
       font-family: $font-robslab;
       font-size: 14px;
@@ -50,7 +50,7 @@
     }
 
     ul {
-      width: 70%;
+      width: 215px;
       margin-top: 21px;
       display: flex;
       justify-content: space-between;
@@ -61,7 +61,7 @@
         background-color: transparent;
       }
 
-      .book-info-op {
+      .info-op {
         font-family: $font-robslab;
         font-size: 14px;
         line-height: 24px;
@@ -71,19 +71,21 @@
 
       .book-border {
         height: 24px;
-        padding-right: 10%;
+        padding-right: 15px;
         border-right: 2px solid $senary-color;
       }
     }
   }
 
   .book-percentage {
+    height: 68px;
     width: 25%;
-    margin-right: 40px;
+    padding-right: 79px;
     display: flex;
     align-items: center;
+    border-right: 2px solid $senary-color;
 
-    .book-percentage-circle {
+    .percentage-circle {
       width: 68px;
       height: 68px;
       margin-right: 20px;
@@ -97,7 +99,7 @@
       transform: rotate(45deg);
     }
 
-    .book-percentage-number {
+    .percentage-number {
       font-family: $font-mon;
 
       h3 {
@@ -116,6 +118,35 @@
   }
 
   .book-progress {
-    width: 25%;
+    margin-right: 59px;
+    font-family: $font-robslab;
+
+    .progress-chapter {
+      opacity: 0.5;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .progress-number-chapter {
+      width: 75px;
+      height: 21px;
+      margin-top: 7px;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.4px;
+    }
+
+    .progress-button {
+      width: 184px;
+      height: 33px;
+      margin-top: 23px;
+      padding: 7px 19px 8px 22px;
+      font-family: $font-robslab;
+      font-weight: 300;
+      color: $secondary-color;
+      border-radius: 3px;
+      border: none;
+      background-color: $primary-color;
+    }
   }
 }
