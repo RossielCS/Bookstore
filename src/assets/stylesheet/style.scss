@@ -3,9 +3,11 @@
 @import 'header';
 @import 'book';
 @import 'category-filter';
+@import 'books-form';
 
 .Books-list {
   padding-top: 38px;
+  padding-bottom: 26px;
   min-width: 1400px;
   background-color: $quinary-color;
 }

@@ -7,7 +7,7 @@ const Book = ({
   const book = { id, title, category };
   return (
     <>
-      <div className="book-info">
+      <td className="book-info">
         <p className="info-category">{category}</p>
         <h2>{title}</h2>
         <p className="info-author">Author</p>
@@ -20,21 +20,21 @@ const Book = ({
           </li>
           <li className="info-op">Edit</li>
         </ul>
-      </div>
-      <div className="book-percentage">
+      </td>
+      <td className="book-percentage">
         <div className="percentage-circle" />
         <div className="percentage-number">
           <h3>2%</h3>
           <p>Completed</p>
         </div>
-      </div>
-      <div className="book-progress">
+      </td>
+      <td className="book-progress">
         <p className="progress-chapter">CURRENT CHAPTER</p>
         <p className="progress-number-chapter">Chapter 1</p>
         <button type="button" className="progress-button">
           UPDATE PROGRESS
         </button>
-      </div>
+      </td>
     </>
   );
 };
