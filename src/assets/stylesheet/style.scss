@@ -2,3 +2,9 @@
 @import 'variables';
 @import 'header';
 @import 'book';
+@import 'category-filter';
+
+.Books-list {
+  padding-top: 38px;
+  background-color: $quinary-color;
+}
