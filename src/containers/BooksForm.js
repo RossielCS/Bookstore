@@ -51,7 +51,7 @@ class BooksForm extends React.Component {
                 category => <option key={category} value={category}>{category}</option>,
               )}
             </select>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="ADD BOOK" />
           </form>
         </div>
       </div>

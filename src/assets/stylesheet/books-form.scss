@@ -2,13 +2,13 @@
 
 .Books-form {
   margin: 0 auto;
-  min-width: 1400px;
-  background-color: $quinary-color;
+  width: 1400px;
 
   div {
     width: 1200px;
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 152px;
     border-top: 2px solid $senary-color;
 
     h2 {
@@ -21,11 +21,14 @@
     }
 
     form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
       input[type=text] {
-        width: 664px;
+        width: 650px;
         height: 45px;
-        margin-right: 34px;
-        padding: 13px 560px 13px 17px;
+        padding: 13px 0 13px 17px;
         border-radius: 4px;
         border: solid 1px $senary-color;
         background-color: $secondary-color;
@@ -46,20 +49,28 @@
       select {
         width: 285px;
         height: 45px;
-        margin: 19px 34px 0;
-        padding: 6px 15px 9px 16px;
+        padding: 13px 0 13px 17px;
         border-radius: 4px;
         font-family: $font-mon;
         font-size: 16px;
         color: #c4c4c4;
         border: solid 1px $senary-color;
         background-color: $secondary-color;
+      }
 
-        option {
-          height: 45px;
-          padding: 6px 15px 9px 16px;
-          border: solid 1px #e8e8e8;
-        }
+      select:focus {
+        outline: none;
+      }
+
+      input[type=submit] {
+        width: 184px;
+        height: 45px;
+        padding: 12.8px 19px 14.2px 22px;
+        font-family: $font-robslab;
+        color: $secondary-color;
+        border: none;
+        border-radius: 3px;
+        background-color: $primary-color;
       }
     }
   }
