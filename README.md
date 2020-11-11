@@ -67,14 +67,9 @@ Instructions from [Heroku Buildpack](https://github.com/mars/create-react-app-bu
 `heroku open`
 
 ## :gem:  Features
-1. The user can do the following mathematical operations:
-    - Addition.
-    - Subtraction.
-    - Multiplication.
-    - Division.
-    - Percentage.
-
-2. It has an "AC" button for all clear.
+1. The user can add a book with title and category.
+2. It has a "remove book" button to delete it from the bookstore.
+3. The user can filter the displayed books by category.
 
 ## :woman:  Author
 
