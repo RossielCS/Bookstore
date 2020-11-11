@@ -22,23 +22,58 @@
     margin-right: 40px;
 
     .book-category {
-      width: 49px;
-      height: 18px;
-      margin: 0 39px 0 0;
       opacity: 0.5;
       font-family: $font-mon;
       font-size: 14px;
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
       color: $tertiary-color;
     }
 
+    h2 {
+      height: 29px;
+      margin-top: 3px;
+      font-family: $font-robslab;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: -0.2px;
+      color: $tertiary-color;
+    }
+
+    .book-author {
+      width: 107px;
+      height: 19px;
+      margin-top: 4px;
+      font-family: $font-robslab;
+      font-size: 14px;
+      font-weight: 400;
+      color: $quaternary-color;
+    }
+
     ul {
+      width: 70%;
+      margin-top: 21px;
       display: flex;
       justify-content: space-between;
+
+      button {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+      }
+
+      .book-info-op {
+        font-family: $font-robslab;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #4386bf;
+      }
+
+      .book-border {
+        height: 24px;
+        padding-right: 10%;
+        border-right: 2px solid $senary-color;
+      }
     }
   }
 

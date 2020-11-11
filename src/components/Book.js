@@ -12,13 +12,13 @@ const Book = ({
         <h2>{title}</h2>
         <p className="book-author">Author</p>
         <ul>
-          <li>Comments</li>
-          <li>
-            <button type="button" onClick={() => handleRemoveBook(book)}>
+          <li className="book-info-op book-border">Comments</li>
+          <li className="book-border">
+            <button className="book-info-op" type="button" onClick={() => handleRemoveBook(book)}>
               Remove
             </button>
           </li>
-          <li>Edit</li>
+          <li className="book-info-op">Edit</li>
         </ul>
       </div>
       <div className="book-percentage">
