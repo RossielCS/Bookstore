@@ -7,22 +7,24 @@ const CategoryFilter = ({ handleFilterChange }) => {
     'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div className="Category-filter">
-      <label htmlFor="filter">
-        <span>Filter Categories</span>
-        <select onChange={e => handleFilterChange(e.target.value)}>
-          <option key="All" value="All" defaultValue>All</option>
-          {filterCategories.map(
-            category => (
-              <option
-                key={category}
-                value={category}
-              >
-                {category}
-              </option>
-            ),
-          )}
-        </select>
-      </label>
+      <div>
+        <label htmlFor="filter">
+          <span>FILTER CATEGORIES</span>
+          <select onChange={e => handleFilterChange(e.target.value)}>
+            <option key="All" value="All" defaultValue>All</option>
+            {filterCategories.map(
+              category => (
+                <option
+                  key={category}
+                  value={category}
+                >
+                  {category}
+                </option>
+              ),
+            )}
+          </select>
+        </label>
+      </div>
     </div>
   );
 };
