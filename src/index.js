@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import App from './components/App';
 import rootReducer from './reducers';
 import idGenerator from './auxiliaries';
-import './assets/stylesheet/index.css';
+import './assets/stylesheet/style.scss';
 
 const initialState = {
   books: [

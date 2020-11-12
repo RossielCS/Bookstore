@@ -1,0 +1,42 @@
+@import 'variables';
+
+.Category-filter {
+  margin: 19px auto;
+  width: 1200px;
+
+  div {
+    width: 1200px;
+
+    label {
+      width: 174px;
+      display: flex;
+      flex-direction: column;
+      font-family: $font-mon;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -0.18px;
+
+      span {
+        padding-bottom: 19px;
+        opacity: 0.5;
+        white-space: nowrap;
+      }
+
+      select {
+        width: 285px;
+        height: 45px;
+        padding: 6px 15px 9px 16px;
+        font-family: $font-mon;
+        font-size: 16px;
+        color: #c4c4c4;
+        border-radius: 4px;
+        border: solid 1px #e8e8e8;
+        background-color: $secondary-color;
+      }
+
+      select:focus {
+        outline: none;
+      }
+    }
+  }
+}
