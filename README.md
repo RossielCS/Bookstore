@@ -1,11 +1,11 @@
 # Bookstore
 
-> The main objective of this repo is to learn to use React and Redux to build a very simple application.<br />
+> The main objective of this repo is to use React and Redux for building an application.<br />
 
 Is a real-world project for a fictional company based in Germany.<br />
 The company is called Magic-books Inc. and requested to build the front-end of an application that will help them organize and manage their bookstore.<br />
 
-They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.<br /> 
+They want it to be fast, dynamic, and responsive to their actions, and therefore I decided to build it with React & Redux.<br /> 
 
 ## :camera: Screenshot
 
@@ -16,10 +16,12 @@ They want it to be fast, dynamic and responsive to their actions and therefore y
 ## :hammer:  Built With
 
 - JavaScript,
+- SASS,
 - NPM,
 - Nodejs
 - Yarn,
 - React,
+- Redux,
 - Visual Studio Code
 
 
