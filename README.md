@@ -7,7 +7,11 @@ The company is called Magic-books Inc. and requested to build the front-end of a
 
 They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.<br /> 
 
-## Screenshot
+## :camera: Screenshot
+
+<p align="center">
+  <img width="460" height="300" src="./src/assets/images/screenshot.png">
+</p>
 
 ## :hammer:  Built With
 
