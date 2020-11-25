@@ -10,7 +10,7 @@ They want it to be fast, dynamic and responsive to their actions and therefore y
 ## :camera: Screenshot
 
 <p align="center">
-  <img width="460" height="300" src="./src/assets/images/screenshot.png">
+  <img width="800" src="./src/assets/images/screenshot.png">
 </p>
 
 ## :hammer:  Built With
