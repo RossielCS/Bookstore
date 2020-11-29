@@ -15,13 +15,13 @@ They want it to be fast, dynamic, and responsive to their actions, and therefore
 
 ## :hammer:  Built With
 
-- JavaScript,
-- SASS,
 - NPM,
-- Nodejs
+- Nodejs,
 - Yarn,
+- SASS,
 - React,
 - Redux,
+- JavaScript,
 - Visual Studio Code
 
 
